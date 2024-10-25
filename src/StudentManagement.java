@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class StudentManagement implements Manageable {
+public class StudentManagement implements Manageable, Displayable {
     private final ArrayList<Student> students = new ArrayList<>();
 
     @Override
@@ -34,6 +34,20 @@ public class StudentManagement implements Manageable {
             System.out.println("Student deleted successfully.");
         }else {
             System.out.println("Student not found.");
+        }
+    }
+    @Override
+    public void displayAllStudents() {
+        for (Student student : students){
+            if(students.isEmpty())
+                System.out.println("No student found.");
+            else {
+                System.out.println("List of students: ");
+                System.out.println("__________________________________________________");
+                System.out.println();
+                student.getDetails();
+                System.out.println();
+            }
         }
     }
 }

@@ -1,7 +1,7 @@
 public class Student extends Person{
     private String studentId;
     private String studentClass;
-    public Student(String studentId, String studentClass, String studentName, int age){
+    public Student(String studentId, String studentName, int age, String studentClass){
         super(studentName, age);
         this.studentId = studentId;
         this.studentClass = studentClass;
