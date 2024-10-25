@@ -9,6 +9,9 @@ public class Student extends Person{
     public String getStudentId(){
         return studentId;
     }
+    public void setStudentClass(String studentClass){
+        this.studentClass = studentClass;
+    }
     public String getStudentClass(){
         return studentClass;
     }
